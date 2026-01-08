@@ -11,7 +11,7 @@ export default function({ title, children }) {
         border-b border-white/10
 
         pb-4
-        
+       
         shadow-[0_10px_10px_rgba(0,0,0,0.10)]
         shadow-[0_4px_4px_rgba(0,0,0,0.05)]
       "
@@ -25,7 +25,7 @@ export default function({ title, children }) {
           text-left text-white  text-base md:text-lg
         "
       >
-        <h2>{title}</h2>
+        <h2 className="md:text-xl">{title}</h2>
         <span
           className={`transition-transform duration-300 ${
             open ? "rotate-180" : ""
@@ -41,7 +41,7 @@ export default function({ title, children }) {
           open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
-        <div className={`overflow-hidden  px-5 text-white/80 text-sm`}>
+        <div className={`overflow-hidden  px-5 text-white/80 text-sm md:text-lg`}>
           {children}
         </div>
       </div>

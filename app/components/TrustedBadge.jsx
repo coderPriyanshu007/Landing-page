@@ -7,13 +7,13 @@ export default function(){
          <div className="flex  gap-[0.7] md:gap-[0.9]">
             {
                 Array.from({length:5}).map((_,index)=>(
-                    <div key={index} className="w-3 h-3 relative">
+                    <div key={index} className="size-3 md:size-4 relative">
                         <Image src='/images/SVG.png' alt="star" fill />
                     </div>
                 ))
             }
         </div>
-        <div className="text-xs md:text-sm text-white/50">
+        <div className="text-xs md:text-sm lg:text-base mt-1 text-white/50">
             150+ Happy Clients
         </div>
        </div>

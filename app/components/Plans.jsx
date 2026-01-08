@@ -16,7 +16,7 @@ export default function(){
                 Yearly
             </button>
         </div>
-        <div className="space-y-4 py-4 md:flex items-center">
+        <div className="space-y-4 py-4 mt-12 lg:flex items-center">
             <PricingCard duration={duration} monthlyPrice='17' yearlyPrice='149' title='Free' listItems={['20 design generation/month','Low-res downloads','Basic style presets','Limited customization options']} />
             <PricingCard duration={duration} monthlyPrice='29' yearlyPrice='299' title="Pro" pro={true} listItems={['Everything in Free','Enigma AI','Unlimited design generations','Custom Themes','High-resolution exports','Custom Extensions','Developer Tools']} />
             <PricingCard duration={duration} monthlyPrice='49' yearlyPrice='499' title="Team" listItems={['Everything in Free','Unlimited Shared Commands','Unlimited Shared Quicklinks','Priority support']} />

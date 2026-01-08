@@ -10,7 +10,7 @@ export default function () {
   return <div className="flex">
     {
         avatars.map((src,index)=>(
-            <div key={src} className="w-8 h-8 md:w-12 md:h-12 relative -ms-2">
+            <div key={src} className="size-8 md:size-12 relative -ms-2">
               <Image  src={src} alt={`Avatar ${index}`} fill />
             </div>
         ))

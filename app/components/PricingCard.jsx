@@ -11,7 +11,7 @@ export default function ({
 }) {
   return (
     <div
-      className={`w-full   ${
+      className={`w-full max-w-lg mx-auto  ${
         pro ? "bg-gradient-to-b from-[#FF7044] to-[#641800]" : ""
       } p-[3px]  rounded-xl`}
     >
@@ -21,15 +21,15 @@ export default function ({
           <h4
             className={`  ${
               pro
-                ? "text-[#FF541F] text-3xl font-semibold"
-                : "text-white text-xl"
+                ? "text-[#FF541F] text-3xl md:text-4xl  font-semibold"
+                : "text-white text-xl md:text-2xl"
             }`}
           >
             {title}
           </h4>
 
           {/* description */}
-          <p className=" text-sm text-white/70">
+          <p className=" text-sm md:text-base lg:text-lg text-white/70">
             Unlock a new level of your personal productivity
           </p>
 
@@ -50,10 +50,10 @@ export default function ({
             .
           </div>
 
-          <p className="text-sm text-white/70">What's included?</p>
-          <ul className="text-white/70">
+          <p className="text-sm md:text-base lg:text-lg text-white/70">What's included?</p>
+          <ul className="text-white/70 text-sm md:text-base lg:text-lg">
             {listItems.map((item, index) => (
-              <li key={item} className="text-sm flex gap-4 mb-3 items-center">
+              <li key={item} className=" flex gap-4 mb-3 items-center">
                 <div className={`${pro ? 'bg-[#FF541F] text-black' : 'border-white border'} w-4 h-4 flex items-center justify-center rounded-full`}>
                   &#10003;
                 </div>

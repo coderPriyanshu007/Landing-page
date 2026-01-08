@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import HamMenu from "./HamMenu";
 import PrimaryButton from "./PrimaryButton";
 
@@ -9,23 +8,23 @@ export default function () {
   return (
     <header className="relative w-full bg-transparent z-40 ">
       <nav className="text-white">
-        <div className="max-w-7xl px-2 md:px-4 lg:px-8  relative   mx-auto">
-          <div className="flex  items-center justify-between py-4 lg:py-8 ">
+        <div className="px-4 max-w-7xl md:px-6 lg:px-8  xl:px-2    relative   mx-auto">
+          <div className="flex   items-center  py-8 lg:py-8 ">
             {/* logo */}
             
               <img
                 src="/images/Logo.png"
                 alt="logo"
-                className="w-10 md:w-12"
+                className="w-10 md:w-12 lg:w-14 "
               />
             
 
             {/* nav links */}
-            <ul className="space-x-12 hidden lg:flex text-white/80 text-lg">
+            <ul className=" hidden mx-auto  lg:flex lg:gap-12 ps-12  text-white/80  md:text-lg">
               <li>
                 <Link
                   href="/"
-                 className={`hover:border-b hover:border-[#FF541F] ${usePathname() === "/" ? "border-b border-[#FF541F] text-white" : ""}`}
+                 className={`hover:border-b  hover:border-[#FF541F] ${usePathname() === "/" ? "border-b border-[#FF541F] text-white" : ""}`}
                 >
                   Home
                 </Link>
@@ -56,7 +55,7 @@ export default function () {
               </li>
             </ul>
 
-            <div className="flex items-center gap-2">
+            <div className="flex ms-auto lg:ms-0 items-center gap-2">
               {/* login button */}
               <PrimaryButton href="" name="Login" />
               
